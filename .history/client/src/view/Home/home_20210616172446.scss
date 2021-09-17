@@ -1,0 +1,68 @@
+.info-user {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-gap: 20px;
+    align-items: center;
+    .left {
+        img {
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+    .right {
+        h1 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        ul {
+            li {
+                list-style: none;
+                i {
+                    color: #7abc76cc;
+                    font-size: 16px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+//
+.sapo-info {
+    margin-top: 20px;
+    line-height: 23px;
+}
+//
+.skills {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 25px;
+    .item {
+        text-align: center;
+        h4 {
+            position: relative;
+            top: 14px;
+            i {
+                font-size: 30px;
+                color: #fff;
+                background: #bbc1c2;
+                width: 60px;
+                height: 60px;
+                line-height: 60px;
+                border-radius: 50%;
+                border: 5px solid #fff;
+            }
+        }
+        h5 {
+            background: #7abc76cc;
+            color: #fff;
+            border-radius: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            i {
+                margin: 0 3px;
+            }
+        }
+    }
+}

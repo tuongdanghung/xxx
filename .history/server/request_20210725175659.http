@@ -1,0 +1,67 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "jj",
+  "password": "1"
+}
+
+
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "jj",
+  "password": "1"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGU3ZTFjMmQ1OTg4ODI0ZTQzNTMyM2EiLCJpYXQiOjE2MjU5MDEwNzF9.tkwh3LuQ15DcARCjAWJoVK_yjWkOolbbJ14D5jd7K94
+
+{
+  "title": "C",
+  "description": "C",
+  "url": "C.com",
+  "status": "LEARNING"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGU3ZTFjMmQ1OTg4ODI0ZTQzNTMyM2EiLCJpYXQiOjE2MjU5MDEwNzF9.tkwh3LuQ15DcARCjAWJoVK_yjWkOolbbJ14D5jd7K94
+
+###
+
+PUT http://localhost:5000/api/posts/6061c25ac2533d41dcae2b19
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGU3ZTFjMmQ1OTg4ODI0ZTQzNTMyM2EiLCJpYXQiOjE2MjU5MDEwNzF9.tkwh3LuQ15DcARCjAWJoVK_yjWkOolbbJ14D5jd7K94
+
+{
+  "title": "Vue",
+  "description": "VUEEEEE",
+  "url": "https://vuejs.org",
+  "status": "LEARNING"
+}
+
+###
+
+DELETE http://localhost:5000/api/posts/6061c25ac2533d41dcae2b19
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGU3ZTFjMmQ1OTg4ODI0ZTQzNTMyM2EiLCJpYXQiOjE2MjU5MDEwNzF9.tkwh3LuQ15DcARCjAWJoVK_yjWkOolbbJ14D5jd7K94
+###
+
+###
+POST http://localhost:5000/api/movies
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MGU3ZTFjMmQ1OTg4ODI0ZTQzNTMyM2EiLCJpYXQiOjE2MjY4NTgyMjl9.UOac3wb-7MePSbUqd2PsTvSqh1q124WZXsjuppUPUcM
+
+{
+  "title": "lllllxl",
+  "description": "llllxl",
+  "url": "llllxl",
+  "status": "PHIM HÀNH ĐỘNG",
+  "images": "https://i.ytimg.com/vi/0rHdNyelJGY/maxresdefault.jpg"
+}

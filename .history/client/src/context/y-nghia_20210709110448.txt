@@ -1,0 +1,2 @@
+quản lý trạng thái của toàn bộ app
+gọi các đường dẫn của api

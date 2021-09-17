@@ -1,0 +1,12 @@
+.card-movie {
+    width: 100%;
+    border: 1px solid #000;
+    height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .card-movie-item {
+        width: 30%;
+        border: 1px solid red;
+    }
+}

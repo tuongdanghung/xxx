@@ -1,0 +1,52 @@
+.card-movie {
+    width: 100%;
+    // height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    .card-movie-item {
+        margin: 0 3px;
+        width: 286px;
+        max-width: 33%;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        .card-header {
+            display: flex;
+            span {
+                display: block;
+                padding-left: 10px;
+                line-height: 1.2;
+            }
+            span:last-child {
+                color: #bdbdbd;
+            }
+        }
+        .card-body {
+            padding: 5px;
+            position: relative;
+            &:hover {
+                background: #00000024;
+            }
+            .heart-icon {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            img {
+                width: 100%;
+                height: 150px;
+            }
+            p {
+                margin-bottom: 0;
+                line-height: 3;
+                padding-left: 2px;
+            }
+        }
+        .card-footer {
+            cursor: pointer;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
